@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reliance Digital</title>
     <style>
+
+
       * {
         margin: 0px;
         padding: 0px;
@@ -96,10 +98,15 @@
         border-radius: 15px;
         margin-top: 40px;
         margin-left: 45%;
+        
+      }
+      button:hover{
+        background-color: red;
+        border: 0px;
       }
 
       #sixth {
-        border: 5px solid green;
+        /* border: 5px solid green; */
         width: 100%;
         height: 300px;
       }
@@ -145,10 +152,10 @@
         border: 1px solid grey;
       }
       #seventh > h2 {
-        font-weight: normal;
+        
         font-size: 24px;
-        line-height: 17px;
-        font-family: Roboto, "system-ui", sans-serif;
+        
+     
         color: #333333;
         margin: 30px 0px;
       }
@@ -171,6 +178,8 @@
       }
       .mobile > div {
         width: 275px;
+        /* border: 1px solid red; */
+        margin-top: -20px;
         /* border: 1px solid blue; */
       }
 
@@ -189,13 +198,14 @@
      #btn {
         width: 155px;
         height: 20px;
+        border: 2px solid green;
         border-radius: 15px;
         margin-left: -2px;
-        margin-top:1px;
+        margin-top:5px;
         background-color: #EFFCF5;
         color: rgb(34, 197, 72);
-        border-color:green;
-        border-color:green;
+       
+        
         font-weight: bolder;
         border-bottom-color:green ;
         display:flex;
@@ -233,10 +243,12 @@
         margin-top: 10px;
         gap: 10px;
         margin-right: 25px;
-        /* border: 1px solid green; */
+       
         padding-right: 15px;
 
-        /* border: 1px solid blue; */
+      }
+      #lp{
+        color:
       }
 
       .laptop > div > img {
@@ -270,7 +282,7 @@
         font-size: 15px;
       } */
       #eight>.box>div{
-       border: 1px solid white;
+       /* border: 1px solid white; */
        margin-right: -20px;
       }
       .main{
@@ -281,7 +293,7 @@
       .main>div:first-child{
         width: 500px;
         height: 40px;
-        border: 1px solid white;
+        /* border: 1px solid white; */
         margin:25px 30px;
         font-size: 20px;
       }
@@ -290,10 +302,7 @@
         grid-template-columns:  28% 72%;
         grid-template-rows: repeat(1,410px);
       }
-      .body>.first{
-        border: 1px solid white;
-       
-      }
+     
       .body>.first>img{
       width: 320px;
         /* height:450px; */
@@ -301,7 +310,7 @@
         margin-left: 25px;
       }
       .body>.second{
-        border: 1px solid white;
+     
         display:flex ;
         height:400px
       }
@@ -331,7 +340,7 @@
       .final>div:first-child{
         width: 500px;
         height: 40px;
-        border: 1px solid white;
+        /* border: 1px solid white; */
         margin:25px 30px;
         font-size: 20px;
       }
@@ -342,7 +351,7 @@
       }
       
       .sub>.one{
-        border: 1px solid white;
+        /* border: 1px solid white; */
         display:flex ;
         height:400px;
         margin-top:-25px;
@@ -353,6 +362,7 @@
         height:260px;
         margin-top: 5px;
         margin-left: 40px;
+        padding-right: 30px;
       }
       .sub>.one>div>img{
         width: 190px;
@@ -379,6 +389,7 @@
       }
      #txt{
       text-decoration:none;
+      color: blue;
      
      }
      #boxlap{
@@ -391,9 +402,223 @@
       border: 1px solid green;
 
      }
+     a{
+      color: blue;
+     }
+     
+     /* navbar */
+    
+        #cont {
+            display: flex;
+            justify-content: space-between;
+            background-color: #e42529;
+            padding: 8px 16px 8px 48px;
+            margin-right: auto;
+            margin-left: auto;
+            align-items: flex-end;
+            color: #fff;
+            height: 50px;
+            width: 100%;
+            cursor: pointer;
+        }
+        
+        .img {
+            width: 15px;
+        }
+        
+        img {
+            width: 180px;
+        }
+        
+        #cont>div {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        input {
+            height: 30px;
+            width: 500px;
+            margin: auto;
+            border-radius: 20px;
+            border: none;
+            text-align: justify;
+        }
+        
+        #select {
+            width: 100.8%;
+            background-color: #1f4985;
+            height: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+        
+        select {
+            background-color: #1f4985;
+            color: white;
+            border: none;
+        }
+        
+        select:hover {
+            background-color: #e42529;
+        }
+        
+        #you {
+            display: flex;
+            background-color: #e42529;
+            color: #fff;
+            gap: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100.8%;
+            align-items: center;
+            justify-content: flex-end;
+            height: 25px;
+            cursor: pointer;
+        }
+        
+        #you>p:last-child {
+            margin-right: 17px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+ 
+     /* bottom */
+     #box{
+        background-color:#1f4985;
+        /* border: 1px solid #144cad;; */
+        width: 100%;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        
+
+
+    }
+    #box p:hover{
+        color: gray;
+        cursor: pointer;
+        
+    }
+    
+    #google{
+        width: 130px;}
+        
+        h4{
+            margin-top: 80px;
+        }
+        
+        
+        #pi{
+            width: 200px;
+        }
+        #box p{
+          margin-top: 20px;
+        }
+        h3{
+          margin-top: 10px;
+          text-decoration: none;
+        }
     </style>
   </head>
+ 
   <body>
+    <div id="you">
+      <p> Find store |</p>
+      <p>Buying Guides |</p>
+      <p>Contact US</p>
+  </div>
+  <div id="cont">
+
+      <img src="https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg" alt="">
+
+      <input id="search" type="text" placeholder="Find your favorite products">
+
+
+      <div>
+          <p>Select your location |</p>
+          <p> <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs0BWuHgxw4SK8_8IPduATr0KXh4mgQjxIDA&usqp=CAU" alt=""> <a href="cartPage.html">Cart |</a></p>
+          <p> <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM1xC7MxqRcKPDczV3Ec29wN-zqTS0ibb1cg&usqp=CAU" alt=""><a href="signup.html"> Login</a></p>
+      </div>
+  </div>
+  <div id="select">
+      <select name="Mobile">
+          <option value="">MOBILES&TABLETS </option>
+          <option value="">TABLETS </option>
+          <option value="">MOBILES</option>
+          <option value="">Smart Phones</option>
+          <option value="">Keypad Phones</option>
+          
+      </select>
+      <select name="">
+          <option value="">TV&AUDIO</option>
+          <option value="">SMART LED </option>
+          <option value="">TV</option>
+          <option value="">SPEAKERS</option>
+          <option value="">SPEAKERS</option>
+          
+      </select>
+      <select name="">
+          <option value="">HOMEAPPLIANCES</option>
+          <option value="">Washing Machines </option>
+          <option value="">Air Conditions</option>
+          <option value="">Vacuum Cleaners</option>
+          <option value="">FANS</option>
+          
+      </select>
+      <select name="">
+          <option value="">COMPUTERS</option>
+          <option value="">LAPTOPS</option>
+          <option value="">GAMING</option>
+          <option value="">BUSINESS</option>
+          <option value="">ROUTERS</option>
+          
+      </select>
+      <select name="">
+          <option value="">CAMERAS</option>
+          <option value="">Mirror Less </option>
+          <option value="">Camera Lens</option>
+          <option value="">SPEAKERS</option>
+          <option value=""></option>
+          
+      </select>
+      <select name="">
+          <option value="">KITCHENAPPLIANCES</option>
+          <option value="">SMART LED </option>
+          <option value="">TV</option>
+          <option value="">SPEAKERS</option>
+          
+          
+      </select>
+      <select name="">
+          <option value="">PERSONALCARE</option>
+          <option value="">SMART LED </option>
+          <option value="">TV</option>
+          <option value="">SPEAKERS</option>
+          
+          
+      </select>
+
+      <select name="">
+          <option value=""> ACCESSORIES</option>
+          <option value="">SMART LED </option>
+          <option value="">TV</option>
+          <option value="">SPEAKERS</option>
+          <option value="">SPEAKERS</option>
+          
+      </select>
+  </div>
+<!-- navbar -->
     <div id="front">
       <img
         src="https://www.reliancedigital.in/medias/Boot-Up-Landing-Page-Banner-02-06-2022.jpg?context=bWFzdGVyfGltYWdlc3wxMTYwNzB8aW1hZ2UvanBlZ3xpbWFnZXMvaDBkL2g2Zi85ODM4NzI2ODczMTE4LmpwZ3xmZWNiMzdmODgzOWYxZTdjZmFlYzg3MDBlYTMyYTY1MWM5NmY2NTJjOTJkMGRmNmJlNmM4MjA2MzdhM2ZlMDlk
@@ -545,19 +770,18 @@
         />
         <div class="mobile">
           <div>
-            <img
-              src="https://www.reliancedigital.in/medias/Oppo-K10-Smartphones-492849760-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w4MzkzfGltYWdlL2pwZWd8aW1hZ2VzL2gzNi9oOWYvOTgwMzg4MTA4NzAwNi5qcGd8NGVhN2NmMmYzMGI3NDg0YzlhNjBmOTVmZGZlOWFmMzY2NWFkNGQyODQwNDBhMjM0OGMwY2EzYzJlZWViOTU4Mg"
+            <img id="moto"
+              src="https://www.reliancedigital.in/medias/Motorola-E32-Mobile-Phone-492849905-i-1?context=bWFzdGVyfGltYWdlc3w4MDY4MHxpbWFnZS9qcGVnfGltYWdlcy9oNmMvaDJiLzk4MzQwMTY3MzUyNjIuanBnfDdjNDJkYjkwMTVjMTU5ZGRhOWI2NmUwOGYxY2Y5ODdhMzg2NTBmOTU5YTIzN2EyOGMwZGYxOGE0NTJkMTU3MTI"
               alt="error"
             />
 
             <br />
             <a id="txt" href=""
-              >Oppo K10 128GB, 6GB RAM,Blue <br />
-              fame, Mobile Phone</a
+              >Motorola E32s GB, 3GB RAM, Misty Silver, Mobile Phone</a
             >
-            <p>Offer price:₹14,990.00</p>
-            <p>M.R.P:18,899.00</p>
-            <p>You Save: 21%(₹4,009)</p>
+            <p>Offer price:₹12,990.00</p>
+            <p>M.R.P:8,899.00</p>
+            <p>You Save: 31%(₹4,000)</p>
             <button id="btn">OFFERS AVAILABLE</button>
           </div>
           <div>
@@ -609,7 +833,7 @@
       </div>
       <div id="eight">
         <div class="head">
-          <p id="txt">LAPTOPS WITH SSD <a id="txt"href="">| View all</a></p>
+          <p id="lp">LAPTOPS WITH SSD <a id="txt"href="">| View all</a></p>
         </div>
 
         <div class="laptop">
@@ -811,10 +1035,67 @@
           </div>
 
           
-            <img id="boxlap" src="https://www.reliancedigital.in/medias/Xiaomi-HD-Smart-LED-TV-Products-Carousel.jpg?context=bWFzdGVyfGltYWdlc3wxMjU2ODV8aW1hZ2UvanBlZ3xpbWFnZXMvaGQxL2g0Ny85ODM5ODA1MzMzNTM0LmpwZ3w4NTAxN2Q3ZDNlMTZiMGYwMTZlMjg5YWIwMmQxODkwMzkzMDE4OTIzOTFlYTA2NmZjZTQ4NGMxNWUzNTU0ZGM3z" alt="Error">
+            <img id="boxlap"  src="https://www.reliancedigital.in/medias/Xiaomi-HD-Smart-LED-TV-Products-Carousel.jpg?context=bWFzdGVyfGltYWdlc3wxMjU2ODV8aW1hZ2UvanBlZ3xpbWFnZXMvaGQxL2g0Ny85ODM5ODA1MzMzNTM0LmpwZ3w4NTAxN2Q3ZDNlMTZiMGYwMTZlMjg5YWIwMmQxODkwMzkzMDE4OTIzOTFlYTA2NmZjZTQ4NGMxNWUzNTU0ZGM3z" alt="Error">
          
          </div>
       </div>
     </div>
+
+
+    <!-- bottom -->
+
+    <div id="box">
+      <div>
+         <h3>PRODUCT CATEGORIES</h3>
+     <p>Smartphones</p>
+     <p>Laptops</p>
+     <p>DSLR Cameras</p>
+     <p>Televisions</p>
+     <p>Air Conditioners</p>
+     <p>Refrigerators</p>
+     <p>Kitchen Appliances</p>
+     <p>Accessories</p>
+     <p>Personal Care & Grooming</p>
+     <h3>FOLLOW US</h3>
+     </div>
+     <div id="po">
+         <h3>SITE INFO</h3>
+         <p>About Reliance Digital</p>
+         <p>resQ Services</p>
+         <p>Gift Cards</p>
+         <p>Corporate Enquires</p>
+         <p>Site Map</p>
+         <p>Contact Us</p>
+      <div id="pi">   <h4>EXPERIENCE RELIANCE DIGITAL APP ON MOBILE</h4>
+         <img id="google" src="https://www.reliancedigital.in/build/client/images/google_play_store.png" alt=""></div>
+     </div>
+     <div>
+         <h3>RESOURCE CENTRE</h3>
+         <p>Product Reviews</p>
+         <p>Buying Guides</p>
+         <p>How Tos</p>
+         <p>Featured Stories</p>
+         <p>Events & Happenings</p>
+     </div>
+     <div>
+         <h3>POLICIES</h3>
+         <p>POLICIES</p>
+         <p>FAQs</p>
+         <p>Cancellation and Return Policy</p>
+         <p>Privacy Policy</p>
+         <p>Shipping and Delivery Policy</p>
+         <p>E-waste Policy</p>
+         <p>EMI Terms & Conditions</p>
+         <p>Pricing and Payments Policy</p>
+         <p>RelianceOne Loyalty T & C</p>
+     </div >
+     </div>
   </body>
 </html>
+<script>
+  document.querySelector("#moto").addEventListener("click",addedcart)
+  function addedcart (){
+    alert ("This item was added to cart")
+    window.location.href="cartPage.html"
+  }
+</script>
