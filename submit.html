@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Done</title>
+</head>
+<style>
+    #Done{
+        width: 70%;
+        margin: auto;
+        height: 400px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+        padding-top: 40px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+    #Done:hover{
+        background-color: rgb(212, 241, 232);
+    }
+   h1{
+       font-size: 40px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-style: italic;
+      color: #DC143C;
+      
+   }
+   p{
+       font-size: 20px;
+   }
+   button{
+       margin-top: 30px;
+       padding: 12px 15px;
+       font-weight: bold;
+       background-color: rgb(10, 97, 237);
+       color: azure;
+       border: 0px ;
+       border-radius: 8px;
+   }
+   button:hover{
+       background-color: #4642c0;
+       cursor: pointer;
+   }
+   #cont {
+            display: flex;
+            justify-content: space-between;
+            background-color: #e42529;
+            padding: 8px 16px 8px 48px;
+            margin-right: auto;
+            margin-left: auto;
+            align-items: flex-end;
+            color: #fff;
+            height: 50px;
+            width: 96.1%;
+            cursor: pointer;
+        }
+        
+        .img {
+            width: 15px;
+        }
+        
+        img {
+            width: 180px;
+        }
+        
+        #cont>div {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        input {
+            height: 30px;
+            width: 500px;
+            margin: auto;
+            border-radius: 20px;
+            border: none;
+            text-align: justify;
+        }
+        
+        #select {
+            width: 100.8%;
+            background-color: #1f4985;
+            height: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+        
+        select {
+            background-color: #1f4985;
+            color: white;
+            border: none;
+        }
+        
+        select:hover {
+            background-color: #e42529;
+        }
+        
+        #you {
+            display: flex;
+            background-color: #e42529;
+            color: #fff;
+            gap: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100.8%;
+            align-items: center;
+            justify-content: flex-end;
+            height: 25px;
+            cursor: pointer;
+        }
+        
+        #you>p:last-child {
+            margin-right: 17px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        #box{
+        background-color:#1f4985;
+        border: 1px solid #144cad;;
+        width: 100%;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        
+
+
+    }
+    #box{
+        height: 200px;
+        justify-content: space-evenly;
+    }
+    h3{
+        margin-top: 10px;
+        margin-left: 30px;
+        text-decoration: underline;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #box p{
+        margin-top: 20px;
+    }
+    #box h2{
+        margin-top: 150px;
+        font-size: 15px;
+        text-align: center;
+        text-decoration: underline;
+        margin-left: 60px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: rgb(236, 222, 222);
+    }
+    #box p:hover{
+        color: gray;
+        cursor: pointer;
+        
+    }
+   
+   
+  
+    #google {
+       
+        width: 130px;
+        margin-left: 0px;
+        text-align: center;
+     
+        
+    }
+   
+        
+        h4{
+            margin-top: 80px;
+            width: 200%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-bottom: 10px;
+        }
+        
+        
+        #pi{
+           
+            margin-top: -30px;
+          margin-right: 10px;
+            width: 300px;
+        }
+   
+</style>
+<body>
+    <div id="you">
+        <p> Find store |</p>
+        <p>Buying Guides |</p>
+        <p>Contact US</p>
+    </div>
+    <div id="cont">
+
+        <img src="https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg" alt="">
+
+
+
+        <div>
+        </div>
+    </div>
+    <div id="select">
+        <select name="Mobile">
+            <option value="">MOBILES&TABLETS </option>
+            <option value="">TABLETS </option>
+            <option value="">MOBILES</option>
+            <option value="">Smart Phones</option>
+            <option value="">Keypad Phones</option>
+            
+        </select>
+        <select name="">
+            <option value="">TV&AUDIO</option>
+            <option value="">SMART LED </option>
+            <option value="">TV</option>
+            <option value="">SPEAKERS</option>
+            <option value="">SPEAKERS</option>
+            
+        </select>
+        <select name="">
+            <option value="">HOMEAPPLIANCES</option>
+            <option value="">Washing Machines </option>
+            <option value="">Air Conditions</option>
+            <option value="">Vacuum Cleaners</option>
+            <option value="">FANS</option>
+            
+        </select>
+        <select name="">
+            <option value="">COMPUTERS</option>
+            <option value="">LAPTOPS</option>
+            <option value="">GAMING</option>
+            <option value="">BUSINESS</option>
+            <option value="">ROUTERS</option>
+            
+        </select>
+        <select name="">
+            <option value="">CAMERAS</option>
+            <option value="">Mirror Less </option>
+            <option value="">Camera Lens</option>
+            <option value="">SPEAKERS</option>
+            <option value=""></option>
+            
+        </select>
+        <select name="">
+            <option value="">KITCHENAPPLIANCES</option>
+            <option value="">SMART LED </option>
+            <option value="">TV</option>
+            <option value="">SPEAKERS</option>
+            
+            
+        </select>
+        <select name="">
+            <option value="">PERSONALCARE</option>
+            <option value="">SMART LED </option>
+            <option value="">TV</option>
+            <option value="">SPEAKERS</option>
+            
+            
+        </select>
+
+        <select name="">
+            <option value=""> ACCESSORIES</option>
+            <option value="">SMART LED </option>
+            <option value="">TV</option>
+            <option value="">SPEAKERS</option>
+            <option value="">SPEAKERS</option>
+            
+        </select>
+
+    </div>
+
+    <div id="Done">
+        <h1>Thank You !!!</h1>
+        <p>Your Payment is Successfull.</p>
+        <button>SHOP MORE</button>
+    </div>
+
+    <div id="box">
+        <div>
+         
+       <h3>FOLLOW US</h3>
+       <img src="https://cdn.iconscout.com/icon-pack/preview-mockup/social-media-289-109374.png" alt="">
+       </div>
+       <h2>All Rights Reserve ©</h2> 
+           
+        <div id="pi">   <h4>EXPERIENCE RELIANCE DIGITAL APP ON MOBILE</h4>
+           <img id="google" src="https://www.reliancedigital.in/build/client/images/google_play_store.png" alt=""></div>
+          
+       </div>
+       <div>
+          
+       </div>
+       <div>
+          
+       </div >
+       </div>
+</body>
+</html>

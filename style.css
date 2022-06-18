@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+    margin: 30px 0px;
+}
+h2{
+    margin: 10px 5px;
+    font-size: 18px;
+}
+
+   
+#payment{
+    width: 30%;
+    height: auto;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 6% 5%;
+    margin-bottom: 50px;
+}
+
+input{
+    display: block;
+    height: 40px;
+    padding-left: 20px;
+  
+
+}
+
+#name{
+    border: 1px solid gray;
+    border-radius: 6px;
+    width: 100%;
+    height: 40px;
+}
+#number{
+    border: 1px solid gray;
+    border-radius: 6px;
+    width: 100%;
+    height: 40px;
+}
+#adds{
+    border: 1px solid gray;
+    border-radius: 6px;
+    height: 60px;
+    width: 100%;
+}
+#city{
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+#apply{
+    background-color: rgb(226, 234, 234);
+    padding: 10px 20px;
+    width: 18%;
+    height: 40px;
+    border: 1px solid rgba(255, 0, 0, 0.203);
+    color: black;
+    font-weight: lighter;
+}
+#apply:hover{
+    background-color: aliceblue;
+}
+#pay{
+    margin-top: 30px;
+    color: white;
+    background-color: rgb(183, 19, 19);
+    font-size: 18px;
+    width: 100%;
+    height: 40px;
+    border: 0px ;
+    border-radius: 8px ;
+
+}
+#pay:hover{
+    background-color: rgba(0, 129, 216, 0.988);
+    color: black;
+}
