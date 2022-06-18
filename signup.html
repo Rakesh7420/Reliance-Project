@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignupPage</title>
+    <style>
+        #second {
+            /* border: 1px solid red; */
+            width: 30%;
+            height: 80%;
+            margin: auto;
+            padding: 30px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        
+        #second>input {
+            width: 90%;
+            height: 40px;
+            margin-bottom: 20px;
+            /* border: #4c8ac0; */
+            border-color: skyblue;
+        }
+        
+         ::placeholder {
+            color: gray;
+            font-size: 15px;
+            padding: 20px;
+        }
+        
+        button {
+            color: white;
+            background-color: red;
+            width: 90%;
+            height: 40px;
+            border: transparent;
+            margin-top: 15px;
+        }
+        
+        button+p {
+            text-align: center;
+        }
+        
+        #rahul>a {
+            color: red;
+        }
+        
+        .copy {
+            margin-top: -15px;
+            margin-bottom: 20px;
+            font-size: 13px;
+        }
+        
+        #first {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 30%;
+            height: 30px;
+            margin: auto;
+            margin-top: 25px;
+            padding: 10px 30px;
+            margin-bottom: -15px;
+        }
+        /* navbar */
+        
+        #cont {
+            display: flex;
+            justify-content: space-between;
+            background-color: #e42529;
+            padding: 8px 16px 8px 48px;
+            margin-right: auto;
+            margin-left: auto;
+            align-items: flex-end;
+            color: #fff;
+            height: 50px;
+            width: 96.1%;
+            cursor: pointer;
+        }
+        
+        .img {
+            width: 15px;
+        }
+        
+        img {
+            width: 180px;
+        }
+        
+        #cont>div {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        #search {
+            height: 30px;
+            width: 500px;
+            margin: auto;
+            border-radius: 20px;
+            border: none;
+            text-align: justify;
+        }
+        
+        #select {
+            width: 100.8%;
+            background-color: #1f4985;
+            height: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+        
+        select {
+            background-color: #1f4985;
+            color: white;
+            border: none;
+        }
+        
+        select:hover {
+            background-color: #e42529;
+        }
+        
+        #you {
+            display: flex;
+            background-color: #e42529;
+            color: #fff;
+            gap: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100.8%;
+            align-items: center;
+            justify-content: flex-end;
+            height: 25px;
+            cursor: pointer;
+        }
+        
+        #you>p:last-child {
+            margin-right: 17px;
+        }
+        
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        /* bottom */
+        
+        #box {
+            background-color: #1f4985;
+            border: 1px solid #144cad;
+            ;
+            width: 100%;
+            height: 500px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 15px;
+        }
+        
+        #box p:hover {
+            color: gray;
+            cursor: pointer;
+        }
+        
+        #google {
+            width: 130px;
+        }
+        
+        h4 {
+            margin-top: 80px;
+        }
+        
+        #pi {
+            width: 200px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="you">
+        <p> Find store |</p>
+        <p>Buying Guides |</p>
+        <p>Contact US</p>
+    </div>
+    <div id="cont">
+
+        <img src="https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg" alt="">
+
+        <input id="search" type="text" placeholder="Find your favorite products">
+
+
+        <div>
+            <p>Select your location |</p>
+            <p> <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs0BWuHgxw4SK8_8IPduATr0KXh4mgQjxIDA&usqp=CAU" alt=""> <a href="cartPage.html">Cart |</a></p>
+            <p> <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM1xC7MxqRcKPDczV3Ec29wN-zqTS0ibb1cg&usqp=CAU" alt=""><a href="signup.html"> Login</a></p>
+        </div>
+    </div>
+    <div id="select">
+        <select name="Mobile">
+            <option value="">MOBILES&TABLETS </option>
+            <option value="">TABLETS </option>
+            <option value="">MOBILES</option>
+            <option value="">Smart Phones</option>
+            <option value="">Keypad Phones</option>
+            
+        </select>
+        <select name="">
+            <option value="">TV&AUDIO</option>
+            <option value="">SMART LED </option>
+            <option value="">TV</option>
+            <option value="">SPEAKERS</option>
+            <option value="">SPEAKERS</option>
+            
+        </select>
+        <select name="">
+            <option value="">HOMEAPPLIANCES</option>
+            <option value="">Washing Machines </option>
+            <option value="">Air Conditions</option>
+            <option value="">Vacuum Cleaners</option>
+            <option value="">FANS</option>
+            
+        </select>
+        <select name="">
+            <option value="">COMPUTERS</option>
+            <option value="">LAPTOPS</option>
+            <option value="">GAMING</option>
+            <option value="">BUSINESS</option>
+            <option value="">ROUTERS</option>
+            
+        </select>
+        <select name="">
+            <option value="">CAMERAS</option>
+            <option value="">Mirror Less </option>
+            <option value="">Camera Lens</option>
+            <option value="">SPEAKERS</option>
+            <option value=""></option>
+            
+        </select>
+        <select name="">
+            <option value="">KITCHENAPPLIANCES</option>
+            <option value="">SMART LED </option>
+            <option value="">TV</option>
+            <option value="">SPEAKERS</option>
+            
+            
+        </select>
+        <select name="">
+            <option value="">PERSONALCARE</option>
+            <option value="">SMART LED </option>
+            <option value="">TV</option>
+            <option value="">SPEAKERS</option>
+            
+            
+        </select>
+
+        <select name="">
+            <option value=""> ACCESSORIES</option>
+            <option value="">SMART LED </option>
+            <option value="">TV</option>
+            <option value="">SPEAKERS</option>
+            <option value="">SPEAKERS</option>
+            
+        </select>
+
+    </div>
+    <form>
+        <div id="first">
+            <h3>Register New Account</h3>
+        </div>
+        <div id="second">
+
+
+            <input id="naam" type="text" placeholder="First Name"> <br>
+            <input id="lastn" type="text" placeholder="Last Name"> <br>
+            <input id="em" type="email" placeholder="Enter Email Here"> <br>
+            <p class="copy">Your email address will be used to send order invoice, order updates etc.</p>
+            <input id="mbl" type="number" placeholder="Enter Mobile Number"> <br>
+            <p class="copy">Your mobile number will be used to avail benefits such as Jio Mart Cashback and ROne Loyality Points and receive quick notifications.</p>
+
+            <button>PROCEED</button>
+            <p id="rahul">Already Registered ?
+                <a href="login1.html">LOGIN</a>
+            </p>
+        </div>
+    </form>
+    <!-- bottom html -->
+    <div id="box">
+        <div>
+            <h3>PRODUCT CATEGORIES</h3>
+            <p>Smartphones</p>
+            <p>Laptops</p>
+            <p>DSLR Cameras</p>
+            <p>Televisions</p>
+            <p>Air Conditioners</p>
+            <p>Refrigerators</p>
+            <p>Kitchen Appliances</p>
+            <p>Accessories</p>
+            <p>Personal Care & Grooming</p>
+            <h3>FOLLOW US</h3>
+        </div>
+        <div id="po">
+            <h3>SITE INFO</h3>
+            <p>About Reliance Digital</p>
+            <p>resQ Services</p>
+            <p>Gift Cards</p>
+            <p>Corporate Enquires</p>
+            <p>Site Map</p>
+            <p>Contact Us</p>
+            <div id="pi">
+                <h4>EXPERIENCE RELIANCE DIGITAL APP ON MOBILE</h4>
+                <img id="google" src="https://www.reliancedigital.in/build/client/images/google_play_store.png" alt=""></div>
+        </div>
+        <div>
+            <h3>RESOURCE CENTRE</h3>
+            <p>Product Reviews</p>
+            <p>Buying Guides</p>
+            <p>How Tos</p>
+            <p>Featured Stories</p>
+            <p>Events & Happenings</p>
+        </div>
+        <div>
+            <h3>POLICIES</h3>
+            <p>POLICIES</p>
+            <p>FAQs</p>
+            <p>Cancellation and Return Policy</p>
+            <p>Privacy Policy</p>
+            <p>Shipping and Delivery Policy</p>
+            <p>E-waste Policy</p>
+            <p>EMI Terms & Conditions</p>
+            <p>Pricing and Payments Policy</p>
+            <p>RelianceOne Loyalty T & C</p>
+        </div>
+    </div>
+
+
+</body>
+<script>
+    document.querySelector("button").addEventListener("click", myfunction)
+    let arr = JSON.parse(localStorage.getItem("sign")) || []
+
+    function myfunction(event) {
+        event.preventDefault()
+        let obj = {
+            phone: document.querySelector("#mbl").value
+        }
+        arr.push(obj)
+        localStorage.setItem("sign", JSON.stringify(arr))
+        window.location.href = "login.html"
+    }
+</script>
+
+</html>
