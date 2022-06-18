@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #cont {
+    <title>Payment Done</title>
+</head>
+<style>
+    #Done{
+        width: 70%;
+        margin: auto;
+        height: 400px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+        padding-top: 40px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+    #Done:hover{
+        background-color: rgb(212, 241, 232);
+    }
+   h1{
+       font-size: 40px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-style: italic;
+      color: #DC143C;
+      
+   }
+   p{
+       font-size: 20px;
+   }
+   button{
+       margin-top: 30px;
+       padding: 12px 15px;
+       font-weight: bold;
+       background-color: rgb(10, 97, 237);
+       color: azure;
+       border: 0px ;
+       border-radius: 8px;
+   }
+   button:hover{
+       background-color: #4642c0;
+       cursor: pointer;
+   }
+   #cont {
             display: flex;
             justify-content: space-between;
             background-color: #e42529;
@@ -87,11 +123,77 @@
             color: white;
             text-decoration: none;
         }
-    </style>
+        #box{
+        background-color:#1f4985;
+        border: 1px solid #144cad;;
+        width: 100%;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        
 
 
-</head>
-
+    }
+    #box{
+        height: 200px;
+        justify-content: space-evenly;
+    }
+    h3{
+        margin-top: 10px;
+        margin-left: 30px;
+        text-decoration: underline;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #box p{
+        margin-top: 20px;
+    }
+    #box h2{
+        margin-top: 150px;
+        font-size: 15px;
+        text-align: center;
+        text-decoration: underline;
+        margin-left: 60px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: rgb(236, 222, 222);
+    }
+    #box p:hover{
+        color: gray;
+        cursor: pointer;
+        
+    }
+   
+   
+  
+    #google {
+       
+        width: 130px;
+        margin-left: 0px;
+        text-align: center;
+     
+        
+    }
+   
+        
+        h4{
+            margin-top: 80px;
+            width: 200%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-bottom: 10px;
+        }
+        
+        
+        #pi{
+           
+            margin-top: -30px;
+          margin-right: 10px;
+            width: 300px;
+        }
+   
+</style>
 <body>
     <div id="you">
         <p> Find store |</p>
@@ -102,13 +204,9 @@
 
         <img src="https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg" alt="">
 
-        <input id="search" type="text" placeholder="Find your favorite products">
 
 
         <div>
-            <p>Select your location |</p>
-            <p> <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs0BWuHgxw4SK8_8IPduATr0KXh4mgQjxIDA&usqp=CAU" alt=""> <a href="cartPage.html">Cart |</a></p>
-            <p> <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM1xC7MxqRcKPDczV3Ec29wN-zqTS0ibb1cg&usqp=CAU" alt=""><a href="signup.html"> Login</a></p>
         </div>
     </div>
     <div id="select">
@@ -179,8 +277,31 @@
         </select>
 
     </div>
-</body>
-<script>
-</script>
 
+    <div id="Done">
+        <h1>Thank You !!!</h1>
+        <p>Your Payment is Successfull.</p>
+        <button>SHOP MORE</button>
+    </div>
+
+    <div id="box">
+        <div>
+         
+       <h3>FOLLOW US</h3>
+       <img src="https://cdn.iconscout.com/icon-pack/preview-mockup/social-media-289-109374.png" alt="">
+       </div>
+       <h2>All Rights Reserve ©</h2> 
+           
+        <div id="pi">   <h4>EXPERIENCE RELIANCE DIGITAL APP ON MOBILE</h4>
+           <img id="google" src="https://www.reliancedigital.in/build/client/images/google_play_store.png" alt=""></div>
+          
+       </div>
+       <div>
+          
+       </div>
+       <div>
+          
+       </div >
+       </div>
+</body>
 </html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+   <style>
+        #cont {
+            display: flex;
+            justify-content: space-between;
+            background-color: #e42529;
+            padding: 8px 16px 8px 48px;
+            margin-right: auto;
+            margin-left: auto;
+            align-items: flex-end;
+            color: #fff;
+            height: 50px;
+            width: 96.1%;
+            cursor: pointer;
+        }
+        
+        .img {
+            width: 15px;
+        }
+        
+        img {
+            width: 180px;
+        }
+        
+        #cont>div {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        input {
+            height: 30px;
+            width: 500px;
+            margin: auto;
+            border-radius: 20px;
+            border: none;
+            padding-left: 20px;
+            text-align: justify;
+        }
+        
+        #select {
+            width: 100.8%;
+            background-color: #1f4985;
+            height: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+        
+        select {
+            background-color: #1f4985;
+            color: white;
+            border: none;
+        }
+        
+        select:hover {
+            background-color: #e42529;
+        }
+        
+        #you {
+            display: flex;
+            background-color: #e42529;
+            color: #fff;
+            gap: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100.8%;
+            align-items: center;
+            justify-content: flex-end;
+            height: 25px;
+            cursor: pointer;
+        }
+        
+        #you>p:last-child {
+            margin-right: 17px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    h1{
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+       #payment{
+        width: 95%;
+        height: auto;
+        padding-bottom: 50px;
+        font-size: 15px;
+        margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       }
+       h1{
+           padding: 15px;
+           font-size: 19px;
+       }
+       #bank{
+           text-align: center;
+           border: 1px solid rgb(219, 216, 216);
+           margin: 20px 30px;
+       }
+       #bank h2{
+           color: #398bdd ;
+           margin-top: 20px;
+           font-size: 20px;
+           margin-bottom: 0px;
+           padding-top: 20px;
+       }
+       #bank p{
+           margin-top: 0px;
+       }
+       #bank p a{
+           color: #e42529;
+           cursor:grab;
+       }
+       #bottom{
+           display: flex;
+           height: auto;
+           margin: auto;
+       }
+     #cardDet{
+         display: block;
+         width: 30%;
+         height: 300px;
+         margin: auto;
+         border-radius: 10px;
+         padding-top: 10px;
+         margin-bottom: 10px;
+         box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+     }
+     #cardDet input{
+         display: block;
+         margin: 10px;
+     }
+     #cardDet h5{
+         margin: 10px;
+     }
+     
+     button{
+         padding: 10px;
+         display: flex;
+         width: 40%;
+         background-color: red;
+         justify-content: center;
+         align-items: center;
+         margin: auto;
+         border: 0px;
+         margin-top: 50px;
+         border-radius: 10px;
+         font-weight: bold;
+         color: white;
+         cursor: pointer;
+
+     }
+     button:hover{
+         background-color: #398bdd;
+     }
+
+       #bottom h3{
+           text-align: center;
+       }
+       #left{
+           border: 1px solid rgb(214, 214, 214);
+           width: 20%;
+       }
+       #right{
+           width: 80%;
+           border: 1px solid rgb(224, 220, 220);
+       }
+       #optn{
+           display: flex;
+       }
+       h2{
+           font-size: 17px;
+           color: #012ccadd;
+           margin-left: 5px;
+        
+       }
+       #optn>img{
+           width: 30%;
+           margin-left: 10px;
+           height: 35px;
+           margin-top: 10px;
+       }
+       #optn>p{
+           margin-left: 350px;
+           font-weight: bold;
+       }
+       #optn>p>a{
+           color: #0d45fa;
+           cursor: pointer;
+       }
+       #left>p{
+           border-bottom: 1px solid rgb(209, 209, 209);
+           height: 60px;
+           margin-left: 40px;
+           font-weight: bolder;
+           cursor: pointer;
+           display: flex;
+           justify-content: start;
+           align-items: center;
+
+          
+       }
+       #cardNum{
+           width: 80%;
+           border: 1px solid gray;
+           border-radius: 5px;
+           
+           height: 30px;
+       }
+       #Date{
+           height: 20px;
+           width: 40%;
+           border: 1px solid grey;
+           border-radius: 5px;
+       }
+      #cvv{
+          width: 40%;
+          height: 25px;
+          border-radius: 5px;
+          border: 1px solid grey;
+
+      }
+      #box{
+        background-color:#1f4985;
+        border: 1px solid #144cad;;
+        width: 100%;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      h3{
+        margin-top: 10px;
+    }
+    #box p:hover{
+        color: gray;
+        cursor: pointer;
+        
+    }
+    #box p{
+        margin-top: 10px;
+    }
+    
+    #google{
+        width: 130px;
+    }
+        
+        h4{
+            margin-top: 80px;
+            width: 250%;
+            margin-bottom: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        
+        #pi{
+            width: 200px;
+        }
+   </style>
+</head>
+<body>
+    <div id="you">
+        <p> Find store |</p>
+        <p>Buying Guides |</p>
+        <p>Contact US</p>
+    </div>
+    <div id="cont">
+
+        <img src="https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg" alt="">
+
+        <input id="search" type="text" placeholder="Find your favorite products                                                                                ⚲" >
+
+
+        <div>
+            <p>Select your location |</p>
+            <p> <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs0BWuHgxw4SK8_8IPduATr0KXh4mgQjxIDA&usqp=CAU" alt=""> <a href="cartPage.html">Cart |</a></p>
+            <p> <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM1xC7MxqRcKPDczV3Ec29wN-zqTS0ibb1cg&usqp=CAU" alt=""><a href="signup.html"> Login</a></p>
+        </div>
+    </div>
+    <div id="select">
+        <select name="Mobile">
+            <option value="">MOBILES&TABLETS </option>
+            <option value="">TABLETS </option>
+            <option value="">MOBILES</option>
+            <option value="">Smart Phones</option>
+            <option value="">Keypad Phones</option>
+            
+        </select>
+        <select name="">
+            <option value="">TV&AUDIO</option>
+            <option value="">SMART LED </option>
+            <option value="">TV</option>
+            <option value="">SPEAKERS</option>
+            <option value="">SPEAKERS</option>
+            
+        </select>
+        <select name="">
+            <option value="">HOMEAPPLIANCES</option>
+            <option value="">Washing Machines </option>
+            <option value="">Air Conditions</option>
+            <option value="">Vacuum Cleaners</option>
+            <option value="">FANS</option>
+            
+        </select>
+        <select name="">
+            <option value="">COMPUTERS</option>
+            <option value="">LAPTOPS</option>
+            <option value="">GAMING</option>
+            <option value="">BUSINESS</option>
+            <option value="">ROUTERS</option>
+            
+        </select>
+        <select name="">
+            <option value="">CAMERAS</option>
+            <option value="">Mirror Less </option>
+            <option value="">Camera Lens</option>
+            <option value="">SPEAKERS</option>
+            <option value=""></option>
+            
+        </select>
+        <select name="">
+            <option value="">KITCHENAPPLIANCES</option>
+            <option value="">SMART LED </option>
+            <option value="">TV</option>
+            <option value="">SPEAKERS</option>
+            
+            
+        </select>
+        <select name="">
+            <option value="">PERSONALCARE</option>
+            <option value="">SMART LED </option>
+            <option value="">TV</option>
+            <option value="">SPEAKERS</option>
+            
+            
+        </select>
+
+        <select name="">
+            <option value=""> ACCESSORIES</option>
+            <option value="">SMART LED </option>
+            <option value="">TV</option>
+            <option value="">SPEAKERS</option>
+            <option value="">SPEAKERS</option>
+            
+        </select>
+
+    </div>
+
+    <div id="payment">
+        <h1>PAY SECURELY</h1>
+ <div id="bank">
+     <h2>Other Offers</h2>
+     <img src="https://www.reliancedigital.in/medias/Indusind-Bank-Payment-Card-Logo.jpg?context=bWFzdGVyfGltYWdlc3wzNjg2fGltYWdlL2pwZWd8aW1hZ2VzL2hiYS9oMDkvOTgyMTA2OTI3OTI2Mi5qcGd8YTYxYjU4YzJiN2ZjZjFiZDU0MDQ0OGI2NzA4OGZjYTIyNjcyM2FhNGRmMGY4NTE2NzI3NzAyMzliZjM4YThlOQ" alt="">
+     <p>Flat 1500 Cashback on IndusInd Bank Credit EMI transactions <a >T&C</a> </p>
+     <img src="https://www.reliancedigital.in/medias/Citi-Payment-Card-Logo.jpg?context=bWFzdGVyfHJvb3R8MzQ2NHxpbWFnZS9qcGVnfGg0Ni9oNDYvOTc2MDU3MzI1OTgwNi5qcGd8YmNhMWE4ZDZlOWUyODUwZDkzNjUxMTc2OWQ3Y2IzODM5ODhmNzI0YTM1MDQ4MGZlODJhZWQ5NzA3N2M3OWU4NA" alt="">
+     <p>10% instant discount (max Rs. 3000) with Citibank Credit & Debit Cards <a>T&C</a> </p>
+     <img src="https://www.reliancedigital.in/medias/Payment-Zest.jpg?context=bWFzdGVyfHJvb3R8NTQ0MXxpbWFnZS9qcGVnfGg4NC9oODQvOTc0MzA1ODkyNzY0Ni5qcGd8MTQxYjM1ZTFjYTNlY2VkYmFmMDNlNTdjYjZlZTE2MWNiMTNlYzBjZjRjNWY1ZWYzZjk1Njg4NzMwNWU5ZmQ2Mw" alt="">
+     <p>10% Cashback with ZestMoney EMI <a>T&C</a> </p>
+     <img src="https://www.reliancedigital.in/medias/Payment-MobiKwik-Logo.jpg?context=bWFzdGVyfHJvb3R8NDk2OXxpbWFnZS9qcGVnfGhlYS9oMTMvOTczNTA3MjI1MTkzNC5qcGd8MjcwMTE0MzNmMmJkZWIzN2RmZWZhNDFmNGU2N2VlNjljZDE4ODk1ODNiOWJmMTY4ZTE1ZTAzOGRhZTM5MGY3ZA" alt="">
+     <p>Get Cashback upto Rs. 1,000 on Mobikwik Wallet <a>T&C</a></p>
+    </div>
+<div id="bottom">
+    <div id="left">
+        <p>Credit Card</p>
+        <p>Debit Card</p>
+        <p>Net Banking</p>
+        <p>UPI</p>
+        <p>Cash On Delivery</p>
+    </div>
+    <div id="right">
+        <div id="optn">
+        <h2>Payment Option</h2> 
+        <img src="https://www.reliancedigital.in/build/client/images/payment_logos_cc.gif" alt="">
+    <p>Looking For EMI ? - <a>Click here</a></p>
+   
+    </div>
+    <hr>
+    <h3>Enter Card Details</h3>
+    <div id="cardDet">
+          <h5>Card Number</h5>
+        <input type="number" placeholder="Enter Card Number" id="cardNum">
+       <h5>Valid Till</h5>
+        <input type="date"  id="Date" >
+        <h5>CVV</h5>
+        <input type="number" placeholder="CVV" id="cvv">
+       <a href="submit.html"><button>PAY</button></a>
+    </div>
+    </div>
+    
+</div>
+   
+    </div>
+    <div id="box">
+        <div>
+           <h3>PRODUCT CATEGORIES</h3>
+       <p>Smartphones</p>
+       <p>Laptops</p>
+       <p>DSLR Cameras</p>
+       <p>Televisions</p>
+       <p>Air Conditioners</p>
+       <p>Refrigerators</p>
+       <p>Kitchen Appliances</p>
+       <p>Accessories</p>
+       <p>Personal Care & Grooming</p>
+       <h3>FOLLOW US</h3>
+       </div>
+       <div id="po">
+           <h3>SITE INFO</h3>
+           <p>About Reliance Digital</p>
+           <p>resQ Services</p>
+           <p>Gift Cards</p>
+           <p>Corporate Enquires</p>
+           <p>Site Map</p>
+           <p>Contact Us</p>
+        <div id="pi">   <h4>EXPERIENCE RELIANCE DIGITAL APP ON MOBILE</h4>
+           <img id="google" src="https://www.reliancedigital.in/build/client/images/google_play_store.png" alt=""></div>
+       </div>
+       <div>
+           <h3>RESOURCE CENTRE</h3>
+           <p>Product Reviews</p>
+           <p>Buying Guides</p>
+           <p>How Tos</p>
+           <p>Featured Stories</p>
+           <p>Events & Happenings</p>
+       </div>
+       <div>
+           <h3>POLICIES</h3>
+           <p>POLICIES</p>
+           <p>FAQs</p>
+           <p>Cancellation and Return Policy</p>
+           <p>Privacy Policy</p>
+           <p>Shipping and Delivery Policy</p>
+           <p>E-waste Policy</p>
+           <p>EMI Terms & Conditions</p>
+           <p>Pricing and Payments Policy</p>
+           <p>RelianceOne Loyalty T & C</p>
+       </div >
+       </div>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Customer Address </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+     #cont {
+            display: flex;
+            justify-content: space-between;
+            background-color: #e42529;
+            padding: 8px 16px 8px 48px;
+            margin-right: auto;
+            margin-left: auto;
+            align-items: flex-end;
+            color: #fff;
+            height: 50px;
+            width: 96.1%;
+            cursor: pointer;
+        }
+        
+        .img {
+            width: 15px;
+        }
+        
+        img {
+            width: 180px;
+        }
+        
+        #cont>div {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        input {
+            height: 30px;
+            width: 500px;
+            margin: auto;
+            border-radius: 20px;
+            border: none;
+            text-align: justify;
+        }
+        
+        #select {
+            width: 100.8%;
+            background-color: #1f4985;
+            height: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+        
+        select {
+            background-color: #1f4985;
+            color: white;
+            border: none;
+        }
+        
+        select:hover {
+            background-color: #e42529;
+        }
+        
+        #you {
+            display: flex;
+            background-color: #e42529;
+            color: #fff;
+            gap: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100.8%;
+            align-items: center;
+            justify-content: flex-end;
+            height: 25px;
+            cursor: pointer;
+        }
+        
+        #you>p:last-child {
+            margin-right: 17px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        #box{
+        background-color:#1f4985;
+        border: 1px solid #144cad;;
+        width: 100%;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        
+
+
+    }
+    h3{
+        margin-top: 10px;
+    }
+    #box p{
+        margin-top: 20px;
+    }
+    #box p:hover{
+        color: gray;
+        cursor: pointer;
+        
+    }
+    
+    #google{
+        width: 130px;}
+        
+        h4{
+            margin-top: 80px;
+            width: 200%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-bottom: 10px;
+        }
+        
+        
+        #pi{
+            width: 300px;
+        }
+</style>
+<body>
+    <div id="you">
+        <p> Find store |</p>
+        <p>Buying Guides |</p>
+        <p>Contact US</p>
+    </div>
+    <div id="cont">
+
+        <img src="https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg" alt="">
+
+        <input id="search" type="text" placeholder="Find your favorite products                                                                                ⚲">
+
+
+        <div>
+            <p>Select your location |</p>
+            <p> <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs0BWuHgxw4SK8_8IPduATr0KXh4mgQjxIDA&usqp=CAU" alt=""> <a href="cartPage.html">Cart |</a></p>
+            <p> <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM1xC7MxqRcKPDczV3Ec29wN-zqTS0ibb1cg&usqp=CAU" alt=""><a href="signup.html"> </a></p>
+        </div>
+    </div>
+    <div id="select">
+        <select name="Mobile">
+            <option value="">MOBILES&TABLETS </option>
+            <option value="">TABLETS </option>
+            <option value="">MOBILES</option>
+            <option value="">Smart Phones</option>
+            <option value="">Keypad Phones</option>
+            
+        </select>
+        <select name="">
+            <option value="">TV&AUDIO</option>
+            <option value="">SMART LED </option>
+            <option value="">TV</option>
+            <option value="">SPEAKERS</option>
+            <option value="">SPEAKERS</option>
+            
+        </select>
+        <select name="">
+            <option value="">HOMEAPPLIANCES</option>
+            <option value="">Washing Machines </option>
+            <option value="">Air Conditions</option>
+            <option value="">Vacuum Cleaners</option>
+            <option value="">FANS</option>
+            
+        </select>
+        <select name="">
+            <option value="">COMPUTERS</option>
+            <option value="">LAPTOPS</option>
+            <option value="">GAMING</option>
+            <option value="">BUSINESS</option>
+            <option value="">ROUTERS</option>
+            
+        </select>
+        <select name="">
+            <option value="">CAMERAS</option>
+            <option value="">Mirror Less </option>
+            <option value="">Camera Lens</option>
+            <option value="">SPEAKERS</option>
+            <option value=""></option>
+            
+        </select>
+        <select name="">
+            <option value="">KITCHENAPPLIANCES</option>
+            <option value="">SMART LED </option>
+            <option value="">TV</option>
+            <option value="">SPEAKERS</option>
+            
+            
+        </select>
+        <select name="">
+            <option value="">PERSONALCARE</option>
+            <option value="">SMART LED </option>
+            <option value="">TV</option>
+            <option value="">SPEAKERS</option>
+            
+            
+        </select>
+
+        <select name="">
+            <option value=""> ACCESSORIES</option>
+            <option value="">SMART LED </option>
+            <option value="">TV</option>
+            <option value="">SPEAKERS</option>
+            <option value="">SPEAKERS</option>
+            
+        </select>
+
+    </div>
+    <form >
+    <H1>Address Details</H1>
+    <div id="payment">
+        <h2>Name</h2>
+        <input type="text" placeholder="Enter Your Name" id="name">
+        <h2>Mobile No.</h2>
+        <input type="number" placeholder="Enter Your Mobile Number" id="number">
+        <h2>Address</h2>
+        <input type="text" placeholder="Enter Address" id="adds">
+        <h2>City</h2>
+        <input type="text" placeholder="Enter City" id="city">
+       <a href="Delivery.html"><button id="pay">Confirm Address </button></a> 
+        
+    </div>
+</form>
+
+    <div id="box">
+        <div>
+           <h3>PRODUCT CATEGORIES</h3>
+       <p>Smartphones</p>
+       <p>Laptops</p>
+       <p>DSLR Cameras</p>
+       <p>Televisions</p>
+       <p>Air Conditioners</p>
+       <p>Refrigerators</p>
+       <p>Kitchen Appliances</p>
+       <p>Accessories</p>
+       <p>Personal Care & Grooming</p>
+       <h3>FOLLOW US</h3>
+       </div>
+       <div id="po">
+           <h3>SITE INFO</h3>
+           <p>About Reliance Digital</p>
+           <p>resQ Services</p>
+           <p>Gift Cards</p>
+           <p>Corporate Enquires</p>
+           <p>Site Map</p>
+           <p>Contact Us</p>
+        <div id="pi">   <h4>EXPERIENCE RELIANCE DIGITAL APP ON MOBILE</h4>
+           <img id="google" src="https://www.reliancedigital.in/build/client/images/google_play_store.png" alt=""></div>
+       </div>
+       <div>
+           <h3>RESOURCE CENTRE</h3>
+           <p>Product Reviews</p>
+           <p>Buying Guides</p>
+           <p>How Tos</p>
+           <p>Featured Stories</p>
+           <p>Events & Happenings</p>
+       </div>
+       <div>
+           <h3>POLICIES</h3>
+           <p>POLICIES</p>
+           <p>FAQs</p>
+           <p>Cancellation and Return Policy</p>
+           <p>Privacy Policy</p>
+           <p>Shipping and Delivery Policy</p>
+           <p>E-waste Policy</p>
+           <p>EMI Terms & Conditions</p>
+           <p>Pricing and Payments Policy</p>
+           <p>RelianceOne Loyalty T & C</p>
+       </div >
+       </div>
+</body>
+</html>
+
+<script>
+     document.querySelector("form").addEventListener("submit" , myAddress)
+    let userAdd = JSON.parse(localStorage.getItem("UserAddress")) || [];
+  
+    function myAddress(){
+       
+          let data = {
+      name : document.querySelector("#name").value,
+      number : document.querySelector("#number").value,
+      address : document.querySelector("#adds").value,
+      city : document.querySelector("#city").value,
+
+      };   
+     userAdd.push(data)
+     localStorage.setItem("UserAddress" ,JSON.stringify(userAdd))
+    window.open("Delivery.html");
+}
+    
+ 
+</script>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery page</title>
+</head>
+
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    #cont {
+            display: flex;
+            justify-content: space-between;
+            background-color: #e42529;
+            padding: 8px 16px 8px 48px;
+            margin-right: auto;
+            margin-left: auto;
+            align-items: flex-end;
+            color: #fff;
+            height: 50px;
+            width: 96.1%;
+            cursor: pointer;
+        }
+        
+        .img {
+            width: 15px;
+        }
+        
+        img {
+            width: 180px;
+        }
+        
+        #cont>div {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        input {
+            height: 30px;
+            width: 500px;
+            margin: auto;
+            border-radius: 20px;
+            border: none;
+            padding-left: 20px;
+            text-align: justify;
+        }
+        
+        #select {
+            width: 100.8%;
+            background-color: #1f4985;
+            height: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+        
+        select {
+            background-color: #1f4985;
+            color: white;
+            border: none;
+        }
+        
+        select:hover {
+            background-color: #e42529;
+        }
+        
+        #you {
+            display: flex;
+            background-color: #e42529;
+            color: #fff;
+            gap: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100.8%;
+            align-items: center;
+            justify-content: flex-end;
+            height: 25px;
+            cursor: pointer;
+        }
+        
+        #you>p:last-child {
+            margin-right: 17px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    h1{
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    #dilv{
+        width: 95%;
+        height: auto;
+        padding-bottom: 50px;
+        font-size: 15px;
+        margin: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #add{
+        display: flex;
+    }
+   #add>h2{
+      margin: 20px;
+      font-size: 16px;
+      margin-bottom: 0px;
+    }
+    #add>h2:hover{
+        color: rgb(2, 66, 111);
+    }
+
+    #inner{
+        width: 42%;
+        height: 200px;
+        border: 1px solid rgb(221, 219, 219);
+        margin: 20px;
+        background-color: #f0f3f7;  
+    }
+    #rule{
+        width: 90%;
+        border: 1px solid rgb(232, 229, 229);
+        margin: 20px;
+        padding-bottom: 10px;
+    }
+    
+   button{
+        padding: 10px;
+        width: 21%;
+        margin: 0px;
+        margin-left: 20px;
+        margin-top: -20px;
+        padding-top: 20px;
+       background-color:  #f0f3f7;
+       border: 1px solid rgb(216, 212, 212);
+       color: rgb(6, 74, 192);
+       font-size: 15px;
+    }
+    button:nth-child(6){
+        margin-left: -10px;
+        color: #e42529;
+        width: 295px;
+    }
+    button:hover{
+        color: rgb(21, 146, 255);
+    }
+   #dilv P{
+        margin-left: 15px;
+        margin-top: 17px;
+        font-weight: bold;
+        font-size: 13px;
+    }
+   #delivery{
+       background-color: #e42529;
+       color: #fff;
+       font-weight: bold;
+       margin-top: 10px;
+       padding: 15px;
+   } 
+   #newAdd{
+       font-weight: bold;
+       padding: 15px;
+   }
+   #delivery:hover{
+       background-color: #c51619;
+   }
+    button:nth-child(13){
+       background-color: white;
+       color: rgb(0, 75, 172);
+       border: 1px solid rgb(0, 75, 172);
+       font-weight: bolder;
+    }
+   
+    #box{
+        background-color:#1f4985;
+        border: 1px solid #144cad;;
+        width: 100%;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        
+
+
+    }
+    h3{
+        margin-top: 10px;
+    }
+    #box p:hover{
+        color: gray;
+        cursor: pointer;
+        
+    }
+    #box p{
+        margin-top: 10px;
+    }
+    
+    #google{
+        width: 130px;
+    }
+        
+        h4{
+            margin-top: 80px;
+            width: 250%;
+            margin-bottom: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        
+        #pi{
+            width: 200px;
+        }
+</style>
+<body>
+    <div id="you">
+        <p> Find store |</p>
+        <p>Buying Guides |</p>
+        <p>Contact US</p>
+    </div>
+    <div id="cont">
+
+        <img src="https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg" alt="">
+
+        <input id="search" type="text" placeholder="Find your favorite products                                                                                ⚲" >
+
+
+        <div>
+            <p>Select your location |</p>
+            <p> <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs0BWuHgxw4SK8_8IPduATr0KXh4mgQjxIDA&usqp=CAU" alt=""> <a href="cartPage.html">Cart |</a></p>
+            <p> <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM1xC7MxqRcKPDczV3Ec29wN-zqTS0ibb1cg&usqp=CAU" alt=""><a href="signup.html"> Login</a></p>
+        </div>
+    </div>
+    <div id="select">
+        <select name="Mobile">
+            <option value="">MOBILES&TABLETS </option>
+            <option value="">TABLETS </option>
+            <option value="">MOBILES</option>
+            <option value="">Smart Phones</option>
+            <option value="">Keypad Phones</option>
+            
+        </select>
+        <select name="">
+            <option value="">TV&AUDIO</option>
+            <option value="">SMART LED </option>
+            <option value="">TV</option>
+            <option value="">SPEAKERS</option>
+            <option value="">SPEAKERS</option>
+            
+        </select>
+        <select name="">
+            <option value="">HOMEAPPLIANCES</option>
+            <option value="">Washing Machines </option>
+            <option value="">Air Conditions</option>
+            <option value="">Vacuum Cleaners</option>
+            <option value="">FANS</option>
+            
+        </select>
+        <select name="">
+            <option value="">COMPUTERS</option>
+            <option value="">LAPTOPS</option>
+            <option value="">GAMING</option>
+            <option value="">BUSINESS</option>
+            <option value="">ROUTERS</option>
+            
+        </select>
+        <select name="">
+            <option value="">CAMERAS</option>
+            <option value="">Mirror Less </option>
+            <option value="">Camera Lens</option>
+            <option value="">SPEAKERS</option>
+            <option value=""></option>
+            
+        </select>
+        <select name="">
+            <option value="">KITCHENAPPLIANCES</option>
+            <option value="">SMART LED </option>
+            <option value="">TV</option>
+            <option value="">SPEAKERS</option>
+            
+            
+        </select>
+        <select name="">
+            <option value="">PERSONALCARE</option>
+            <option value="">SMART LED </option>
+            <option value="">TV</option>
+            <option value="">SPEAKERS</option>
+            
+            
+        </select>
+
+        <select name="">
+            <option value=""> ACCESSORIES</option>
+            <option value="">SMART LED </option>
+            <option value="">TV</option>
+            <option value="">SPEAKERS</option>
+            <option value="">SPEAKERS</option>
+            
+        </select>
+
+    </div>
+     <div id="dilv">
+         <h1>DELIVERY METHOD</h1>
+        <div id="add">
+            <h2>SHIPPING ADDRESS </hs2>
+            <h2>PICK AT STORE</h2>
+        </div>
+       
+         <hr>
+
+         <div id="inner">
+             
+        </div>
+         <button>Edit</button> <button id="delete">Delete</button>
+        
+ <div id="rule">
+        <p>*Either your PIN code or some items in your Order are not eligible for INSTA Delivery.</p>
+        <p>*Delivery assurance is subject to our delivery locations staying open as per govt. regulations
+        </p>
+        <p>*please Note :</p> 
+        <p>1) OTP is required for delivery completion. </p>
+        <p>2) For additional information, refer  Read T&C's </p>
+      
+    </div>
+
+       <a href="payment.html"> <button id="delivery">DELIVER HERE </button></a>
+       <a href="address.html"><button id="newAdd">ADD NEW SHIPPING ADDRESS</button ></a> 
+     </div>
+
+     <div id="box">
+        <div>
+           <h3>PRODUCT CATEGORIES</h3>
+       <p>Smartphones</p>
+       <p>Laptops</p>
+       <p>DSLR Cameras</p>
+       <p>Televisions</p>
+       <p>Air Conditioners</p>
+       <p>Refrigerators</p>
+       <p>Kitchen Appliances</p>
+       <p>Accessories</p>
+       <p>Personal Care & Grooming</p>
+       <h3>FOLLOW US</h3>
+       </div>
+       <div id="po">
+           <h3>SITE INFO</h3>
+           <p>About Reliance Digital</p>
+           <p>resQ Services</p>
+           <p>Gift Cards</p>
+           <p>Corporate Enquires</p>
+           <p>Site Map</p>
+           <p>Contact Us</p>
+        <div id="pi">   <h4>EXPERIENCE RELIANCE DIGITAL APP ON MOBILE</h4>
+           <img id="google" src="https://www.reliancedigital.in/build/client/images/google_play_store.png" alt=""></div>
+       </div>
+       <div>
+           <h3>RESOURCE CENTRE</h3>
+           <p>Product Reviews</p>
+           <p>Buying Guides</p>
+           <p>How Tos</p>
+           <p>Featured Stories</p>
+           <p>Events & Happenings</p>
+       </div>
+       <div>
+           <h3>POLICIES</h3>
+           <p>POLICIES</p>
+           <p>FAQs</p>
+           <p>Cancellation and Return Policy</p>
+           <p>Privacy Policy</p>
+           <p>Shipping and Delivery Policy</p>
+           <p>E-waste Policy</p>
+           <p>EMI Terms & Conditions</p>
+           <p>Pricing and Payments Policy</p>
+           <p>RelianceOne Loyalty T & C</p>
+       </div >
+       </div>
+</body>
+</html>
+
+<script>
+   let arrFromLS =JSON.parse (localStorage.getItem("UserAddress"));
+  
+  displayUser(arrFromLS)
+
+  function  displayUser(arrFromLS){
+   document.querySelector("#inner").innerHTML=""
+    arrFromLS.forEach(function(elem,dlt){
+
+        let box = document.createElement("div")
+
+        let para1 = document.createElement("p")
+        para1.innerText = elem.name
+        para1.style.fontSize="16px"
+
+        let para2 = document.createElement("p")
+        para2.innerText = elem.number
+        para2.style.lineHeight="0px"
+
+        let para3 = document.createElement("p")
+        para3.innerText = elem.address
+        let para4 = document.createElement("p")
+        para4.innerText = elem.city
+ 
+    
+        box.append(para1,para2,para3,para4)
+        document.querySelector("#inner").append(box)
+    })
+  }
+ 
+  document.querySelector("#delete").addEventListener("click" , deleteAdd)
+ 
+function deleteAdd(dlt){
+    arrFromLS.splice(dlt,1)
+    localStorage.setItem("UserAddress" , JSON.stringify(arrFromLS))
+    displayUser(arrFromLS)
+ }
+
+
+</script>
